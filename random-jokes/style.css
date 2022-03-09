@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Syne:wght@600&display=swap');
+
+* {
+  font-family: 'Space Grotesk', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  background-color: rgba(37, 7, 37, 0.507);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+  0 6px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.languages {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.languages a:hover {
+  color: #9f68e0;
+}
+
+h3 {
+  margin: 0;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+.quote {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #9f68e0;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+  0 6px 6px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 40px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: all .3s ease-in-out;
+  background-color: #7700ff;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.on {
+  color: #7700ff;
+}
+
+.light {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.dark {
+  background: linear-gradient(-45deg, #7a3d2b, #791f41, #12607c, #116e59);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.footer-item {
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.footer-item-rs a {
+  display: flex;
+  cursor: pointer;
+}
+
+.rs-school {
+  background: url(svg/rs_school_js.svg);
+  background-size: contain;
+  width: 100px;
+  height: 37px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-item a:hover {
+  color: #7700ff;
+  transition: all .5 ease-in;
+}
